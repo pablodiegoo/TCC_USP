@@ -1,0 +1,56 @@
+---
+title: "Machine Learning como Motor da Evolução em Estratégias Long and Short."
+author: "Pablo Diego Pereira"
+output:
+  html_document:
+    reference_docx: ../ProjetoPesquisa.docx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+install.packages("rticles")
+```
+
+# Introdução
+
+Métodos quantitativos de trading já vem sendo utilizado, principalmente pelas grandes instituições, nas últimas décadas pelo mercado financeiro. Long and Short é uma operação de arbitragem estatística que busca obter retornos através da exploração das ineficiências relativas de preço entre ativos correlacionados. Tradicionalmente, essas estratégias são baseadas em modelos estatísticos e matemáticos, como o modelo de cointegração de Engle e Granger (1987). Além desses, há também casos de operações baseadas em anaálise fundamentalista, onde o trader busca identificar ativos subvalorizados ou sobrevalorizados, e operações baseadas em análise técnica, onde o trader busca identificar padrões gráficos e tendências de preço, entre diversos outros modelos. O objetivo deste trabalho é utilizar técnicas de Machine Learning para facilitar a identificação de pares de ativos para operações Long and Short.
+
+A sofisticação dos modelos de trading tem aumentado com o avanço da tecnologia e da ciência de dados. Entre as estratégias de trading utilizadas, o Long & Short (também conhecido como pair trading) se destaca pela suas capacidade de gerar retornos descorrelacionados com o mercado, através da compra (long) de ativos subvalorizados e venda (short) de ativos supervalorizados. A identificação desses pares é um desafio significativo, pois requer a identificação de ativos que se movem juntos, ou seja, de maneira correlacionada, mas que eventualmente se desviam de seus valores fundamentais.
+
+# Objetivo
+
+# Metodologia
+
+# Cronograma de Atividades
+
+Atividades Planejadas | Mar | Abr | Mai | Jun | Jul | Ago | Set | Out | Nov | Dez | Jan
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+Projeto de Pesquisa | X
+Revisão da Literatura X|X|X|X|X|X|X|X
+Coleta e Tratamento dos dados ||X
+Modelagem e Testes |||X
+Treinamento e ajuste dos modelos ||||X
+Resultados Preliminares ||||X
+Ajuste da Escrita do TCC ||||||X
+Redação e Revisão do TCC |||||||X
+Entrega do TCC e Defesa |||||||X
+Defesa do TCC ||||||||||X
+
+# Referências
+
+- Gatev, E., Goetzmann, W. N., Rouwenhorst, K. G. (2006). Pairs trading: Performance of a relative value arbitrage rule. Review of Financial Studies, 19(3), 797-827.
+- Engle, R. F., Granger, C. W. (1987). Cointegration and error correction: Representation, estimation, and testing. Econometrica: Journal of the Econometric Society, 251-276.
+- Avellaneda, M., Lee, J. H. (2010). Statistical Arbitrage in the US Equities Market. Quantitative Finance, 10(7), 761-782.
+- Focardi, S. M., Fabozzi, F. J. (2004). The Mathematics of Financial Modeling and Investment Management. Wiley.
+- Lipton, Z. C., Steinhardt, J. (2018). Troubling Trends in Machine Learning Scholarship. arXiv preprint arXiv:1807.03341.
+- Hull, J. C. (2009). Options, Futures, and Other Derivatives. Pearson Education.
+- Alexander, C. (2000). Market Models: A Guide to Financial Data Analysis. Wiley.
+- Géron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems. O'Reilly Media, Inc.
+- López de Prado, M. (2018). Advances in Financial Machine Learning. Wiley.
+- Ardia, D., Boudt, K. (2018). Financial Prediction Using Machine Learning. Springer.
+- Chan, E. P. (2017). Machine Trading: Deploying Computer Algorithms to Conquer the Markets. Wiley.
+- Krauss, C., Do, X. A., Huck, N. (2017). Deep neural networks, gradient-boosted trees, random forests: Statistical arbitrage on the S&P 500. European Journal of Operational Research, 259(2), 689-702.
+- Zuckerman, G. (2019). O Homem que Venceu o Mercado. Intrínseca.
+- Berstein, P. L. (1996). Desafio aos Deuses. Campus.
+
+- Papers do Journal of Financial Data Science e Quantitative Finance

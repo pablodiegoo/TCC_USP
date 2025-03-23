@@ -58,16 +58,17 @@ Defesa do TCC ||||||||||X
 
 **Referências** 
 - Hull, John C. Options, Futures, and Other Derivatives
-- Gatev, Evans, and Brooks (2006). Pairs Trading: Performance of a Relative Value Arbitrage Rule
 - Alexander, Carol. Market Models
 - Géron, Aurélien. Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow
 - López de Prado, M. (2018). Advances in Financial Machine Learning. Wiley.
 - Ardia, David, and Boudt, Kris. Financial Prediction Using Machine Learning
 - O Homem que Venceu o Mercado
 - Desafio aos Deuses
-Papers do Journal of Financial Data Science e Quantitative Finance
-- Estudos sobre cointegração e pares de ativos (Engle & Granger, 1987)
+- Papers do Journal of Financial Data Science e Quantitative Finance
 - Chan, E. P. (2017). Machine Trading: Deploying Computer Algorithms to Conquer the Markets. Wiley.
 - Focardi, S. M., Fabozzi, F. J. (2004). The Mathematics of Financial Modeling and Investment Management. Wiley.
 - Avellaneda, M., Lee, J. H. (2010). Statistical Arbitrage in the US Equities Market. Quantitative Finance, 10(7), 761-782.
 - Krauss, C., Do, X. A., Huck, N. (2017). Deep neural networks, gradient-boosted trees, random forests: Statistical arbitrage on the S&P 500. European Journal of Operational Research, 259(2), 689-702.
+
+- Gatev, Evans, and Brooks (2006). Pairs Trading: Performance of a Relative Value Arbitrage Rule
+- Engle, R. and Granger, C. (1987) Cointegration and Error Correction: Representation, Estimation and Testing. Econometrica, 55, 251-276.
