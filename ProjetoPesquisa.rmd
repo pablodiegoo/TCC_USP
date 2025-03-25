@@ -17,13 +17,22 @@ Métodos quantitativos de trading já vem sendo muito utilizado, principalmente 
 Dentro dessa estratégia, a escolha dos ativos que serão utilizados acaba fazendo parte central do processo de trading. Vários métodos vem sendo utilizados para identificar esses pares, sendo alguns dos mais populares: cointegração e distância. O método de cointegração, proposto por Vidyamurthy (2004), consiste em identificar pares de ativos que possuem possibilidade de cointegração. O método de distância é bem mais simples, e popular no mercado comparado ao meio acadêmico, consiste em encontrar ativos com alta correlação, indexar um pelo outro e buscar uma operação de retorno a média caso haja uma distorção. Apesar do grande esforço estatistico nessas abordagens, ainda ocorre muita dificuldade em identificar padrões complexos, além de uma constante necessidade de adaptação e até subjetividade em alguns casos.
 Machine learning tem se tornado um grande motor de mudanças nas finanças como um todo.As atuações mais divulgadas estão na área de avaliação de crédito e detecção de fraudes, onde as fintechs tiveram grandes investimentos em todo mundo e, no Brasil, tivemos a criação de empresas como Nubank e Creditas. Além disso, pode ser utilizado para previsão de preços de diversos ativos, incluindo imóveis e seu potencial valor de locação, que pode ser visto em empresas como a Loft e QuintoAndar. Seu uso pode ser feito em qualquer segmento, incluindo até políticas públicas, como no combate à evasão escolar. Essas e diversas outras aplicações mostram a incrível seara que o machine learning pode atuar, e o quanto ele pode ser benéfico para a sociedade.
 A sofisticação dos modelos de trading tem aumentado com o avanço da tecnologia e da ciência de dados. O uso de machine learning, por exemplo, tem sido foco de muitos estudos e até práticas de mercado para identificação dessas oportunidades. Isso acontece porque, diferente dos modelos tradicionais de análise, ele também pode capturar relações não lineares de ativos, lidar melhor com alterações de fluxo do mercado financeiro de maneira mais assertiva e também lidar com grandes volumes de dados para identificar brechas que não seriam facilmente identificadas por modelos tradicionais. O uso de modelos não supervisionados, como clustering, pode ser uma alternativa para identificação desses pares, por exemplo. Assim como os modelos supervisionados, como redes neurais, que podem ser utilizados para prever a relação entre os ativos.
+Métodos quantitativos de trading já vem sendo muito utilizado, principalmente pelas grandes instituições no mercado financeiro. Pair Trading (também conhecido como Long and Short ou negociação em pares) é uma operação de arbitragem estatística, que vem sendo utilizado na indústria financeira desde a década de 80, e busca obter retornos através da exploração das ineficiências relativas de preço entre ativos correlacionados. É um dos modelos mais populares de trading quantitativo, pois permite que os investidores possam lucrar tanto em mercados de alta quanto de baixa, através da compra (long) de ativos subvalorizados e venda (short) de ativos supervalorizados, sendo assim declarado como uma estratégia potencialmente neutra, visto que também há possibilidade de pair trading direcionais, mas que não serão abordados neste trabalho
+Dentro dessa estratégia, a escolha dos ativos que serão utilizados acaba fazendo parte central do processo de trading. Vários métodos vem sendo utilizados para identificar esses pares, sendo alguns dos mais populares: cointegração e distância. O método de cointegração, proposto por Vidyamurthy (2004), consiste em identificar pares de ativos que possuem possibilidade de cointegração. O método de distância é bem mais simples, e popular no mercado comparado ao meio acadêmico, consiste em encontrar ativos com alta correlação, indexar um pelo outro e buscar uma operação de retorno a média caso haja uma distorção. Apesar do grande esforço estatistico nessas abordagens, ainda ocorre muita dificuldade em identificar padrões complexos, além de uma constante necessidade de adaptação e até subjetividade em alguns casos.
+Machine learning tem se tornado um grande motor de mudanças nas finanças como um todo.As atuações mais divulgadas estão na área de avaliação de crédito e detecção de fraudes, onde as fintechs tiveram grandes investimentos em todo mundo e, no Brasil, tivemos a criação de empresas como Nubank e Creditas. Além disso, pode ser utilizado para previsão de preços de diversos ativos, incluindo imóveis e seu potencial valor de locação, que pode ser visto em empresas como a Loft e QuintoAndar. Seu uso pode ser feito em qualquer segmento, incluindo até políticas públicas, como no combate à evasão escolar. Essas e diversas outras aplicações mostram a incrível seara que o machine learning pode atuar, e o quanto ele pode ser benéfico para a sociedade.
+A sofisticação dos modelos de trading tem aumentado com o avanço da tecnologia e da ciência de dados. O uso de machine learning, por exemplo, tem sido foco de muitos estudos e até práticas de mercado para identificação dessas oportunidades. Isso acontece porque, diferente dos modelos tradicionais de análise, ele também pode capturar relações não lineares de ativos, lidar melhor com alterações de fluxo do mercado financeiro de maneira mais assertiva e também lidar com grandes volumes de dados para identificar brechas que não seriam facilmente identificadas por modelos tradicionais. O uso de modelos não supervisionados, como clustering, pode ser uma alternativa para identificação desses pares, por exemplo. Assim como os modelos supervisionados, como redes neurais, que podem ser utilizados para prever a relação entre os ativos.
 
 # Objetivo
 
 O objetivo desse projeto é desenvolver e avaliar um modelo de machine learning não supervisionado para a seleção de ativos para operações de pair trading, visando otimizar o desempenho dessas estratégias no mercado financeiro brasileiro e superar os modelos tradicionais de cointegração e correlação.
-Para isso serão utilizados inicialmente dados históricos diários de ativos da B3, como fiis, ações, índices e ETFs, para treinar e testar o modelo, coletando usando a API do metatrader como fonte primária dos dados, extraindo preços de abertura, fechamento, maxima, minima e volume. Serão também calculados indicadores técnicos para enriquecer a base de dados: RSI (Relative Strength Index) de 9 períodos, MACD (Moving Average Convergence Divergence), Bollinger Bands, entre outros.
 
 # Metodologia
+
+ Esse pesquisa usará uma abordagem quantitativa, para desenvolver e validar um modelo de machine learning para seleção dinamica de ativos em estratégia de pair trading, utilizando dados históricos do mercado financeiro brasileiro e será dividido em 3 etapas principais: seleção de pares, modelagem e testes.
+ A etapa de seleção de pares se iniciará com a coleta de dados históricos diários de ativos da B3 por meio de fontes confiáveis, como a api do Metatrader, com um período mínimo de 5 anos. Nele buscarmos informações de abertura, fechamento, maxima e mínima de ações e fundos listados em bolsa, junto com indicadores técnicos, como índice de força relativa, médias móveis e volatilidade histórica, entre outros. O pré-processamento filtrará para garantir que os ativos possuam liquidez suficiente para operações de pair trading. 
+Feature en
+
+Para isso serão utilizados inicialmente dados históricos diários de ativos da B3, como fiis, ações, índices e ETFs, junto com indicadores técnicos, como correlação, volatilidade, índice de força relativa, entre outros. Com isso aplicaremos um algoritmo de clustering aos ativos, para formar grupos semelhantes e selecionar os pares utilizados no estudo. Implementaremos uma estratégia de trading simples, baseada em reinforcment learning e buscaremos definir regras claras de entrada e saída baseadas no spread do par, para que possamos avaliar o desempenho do modelo.
 
 # Resultados Esperados
 
@@ -45,10 +54,16 @@ Defesa do TCC ||||||||||X
 # Referências
 Favero, L.P.; Belfiore, P. 2024. Manual de Análise de Dados: estatística e Machine Learning com EXCEL®, SPSS®, STATA®, R® e Python®. 2ed. LTC, Rio de Janeiro, RJ, Brasil.
 López de Prado, M. (2018). Advances in Financial Machine Learning. Wiley.
+López de Prado, M. (2018). Advances in Financial Machine Learning. Wiley.
 Vidyamurthy, G. (2004). Pairs Trading: Quantitative Methods and Analysis. Wiley.
 Whistler, M. (2004). Trading Pairs: Capturing Profits and Hedging Risk with Statistical Arbitrage Strategies. Wiley.
 Ehrman, D. (2006). The Handbook of Pairs Trading: Strategies Using Equities, Options, and Futures. Wiley.
 Hull, J. C. (2009). Options, Futures, and Other Derivatives. Pearson Education.
+
+## Pair selecting
+Gatev, E., Goetzmann, W. N., Rouwenhorst, K. G. (2006). Pairs trading: Performance of a relative value arbitrage rule. Review of Financial Studies, 19(3), 797-827.
+Engle, R. F., Granger, C. W. (1987). Cointegration and error correction: Representation, estimation, and testing. Econometrica: Journal of the Econometric Society, 251-276.
+
 
 ## Pair selecting
 Gatev, E., Goetzmann, W. N., Rouwenhorst, K. G. (2006). Pairs trading: Performance of a relative value arbitrage rule. Review of Financial Studies, 19(3), 797-827.
@@ -61,7 +76,13 @@ Do. B., Faff, R., Hamza, K. (2006). A new approach to modeling and estimation fo
 
 Avellaneda, M., Lee, J. H. (2010). Statistical Arbitrage in the US Equities Market. Quantitative Finance, 10(7), 761-782.
 Xie, W. e Wu, Y. (2013). Copula-based pairs trading strategy. SSRN Electronic Journal.
+Xie, W. e Wu, Y. (2013). Copula-based pairs trading strategy. SSRN Electronic Journal.
 Focardi, S. M., Fabozzi, F. J. (2004). The Mathematics of Financial Modeling and Investment Management. Wiley.
+
+
+Roychoudhury, R., Bhagtani, R., Daftari, A. (2023). Pairs Trading Using Clustering and Deep Reinforcement Learning
+
+
 
 
 Roychoudhury, R., Bhagtani, R., Daftari, A. (2023). Pairs Trading Using Clustering and Deep Reinforcement Learning
@@ -85,8 +106,12 @@ Rad, H., Low, R. K. Y., & Faff, R. W. (2015). The Profitability of Pairs Trading
 Sohail, M. K., Sindhu, M.I., Imran, M., (2020). The Secrets to Cash the Profits in Pair Trading Strategies: A Case of KSE Firms, City University Research Journal, 10(2), 189-204.
 
 Lin, Y.-X., McCrae, M., & Gulati, C. (2006). Loss protection in pairs trading through minimum profit bounds: A cointegration approach. Journal of Applied Mathematics and Decision Sciences, 2006, 1–14.
+Sohail, M. K., Sindhu, M.I., Imran, M., (2020). The Secrets to Cash the Profits in Pair Trading Strategies: A Case of KSE Firms, City University Research Journal, 10(2), 189-204.
+
+Lin, Y.-X., McCrae, M., & Gulati, C. (2006). Loss protection in pairs trading through minimum profit bounds: A cointegration approach. Journal of Applied Mathematics and Decision Sciences, 2006, 1–14.
 Velissaris, J. R. (2010). Diversified Statistical Arbitrage: Dynamically Combining Mean Reversion and Momentum Strategies. SSRN Electronic Journal.
 Chang, E. (2008). Quantitative Trading: How to Build Your Own Algorithmic Trading Business. Wiley.
+Huang, C.-F., Hsu, C.-J., Chen, C.-C., Chang, B. R., & Li, C.-A. (2015). An Intelligent Model for Pairs Trading Using Genetic Algorithms. Computational Intelligence and Neuroscience, 2015, 1–10.
 Huang, C.-F., Hsu, C.-J., Chen, C.-C., Chang, B. R., & Li, C.-A. (2015). An Intelligent Model for Pairs Trading Using Genetic Algorithms. Computational Intelligence and Neuroscience, 2015, 1–10.
 Flux, J. (2024). Machine Learning Mathematics in Python. 
 Flux, J. (2024). Stochastic Processes and Their Applications in Finance: With Python
