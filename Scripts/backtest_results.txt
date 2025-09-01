@@ -1,0 +1,45 @@
+Resumo do Backtest (Portfolio Equal-Weighted)
+Data/Hora geração: 2025-08-31 23:50:19.335073
+
+Parâmetros:
+- CSV: C:\Users\tatia\OneDrive\Documentos\Coding\Data Learning\MBA USP\TCC_USP\Scripts\dados_com_features_tecnicas.csv
+- Train Years: 5
+- DBSCAN: eps=1.5, min_samples=2
+- Z-Score: window=60, entry=2.0, exit=0.5
+- Inicial: 100,000.00, Comissão: 0.0010
+
+Métricas do Portfólio:
+- Retorno Total: 0.000000
+- Retorno Anualizado: 0.000000
+- Sharpe: 0.0000
+- Sortino: 0.0000
+- Max Drawdown: 0.000000
+- Dias no Teste: 1241
+- Total Trades (pares): 0
+
+Pares Selecionados (limitados por --max-pairs):
+  ABEV3-ALOS3: trades=0, final_value=nan
+  ABEV3-ASAI3: trades=0, final_value=nan
+  ABEV3-AURE3: trades=0, final_value=nan
+  ABEV3-AZZA3: trades=0, final_value=nan
+  ABEV3-B3SA3: trades=0, final_value=nan
+  ABEV3-BBAS3: trades=0, final_value=nan
+  ABEV3-BBDC3: trades=0, final_value=nan
+  ABEV3-BBDC4: trades=0, final_value=nan
+  ABEV3-BBSE3: trades=0, final_value=nan
+  ABEV3-BEEF3: trades=0, final_value=nan
+  ABEV3-BPAC11: trades=0, final_value=nan
+  ABEV3-BRAP4: trades=0, final_value=nan
+  ABEV3-BRAV3: trades=0, final_value=nan
+  ABEV3-BRFS3: trades=0, final_value=nan
+  ABEV3-BRKM5: trades=0, final_value=nan
+  ABEV3-CMIG4: trades=0, final_value=nan
+  ABEV3-CMIN3: trades=0, final_value=nan
+  ABEV3-COGN3: trades=0, final_value=nan
+  ABEV3-CPFE3: trades=0, final_value=nan
+  ABEV3-CPLE6: trades=0, final_value=nan
+  ABEV3-CSAN3: trades=0, final_value=nan
+  ABEV3-CSNA3: trades=0, final_value=nan
+  ABEV3-CVCB3: trades=0, final_value=nan
+  ABEV3-CXSE3: trades=0, final_value=nan
+  ABEV3-CYRE3: trades=0, final_value=nan
